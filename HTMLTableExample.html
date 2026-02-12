@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table Example</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgray;
+        }
+        caption {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Information Table</h2>
+
+    <table>
+        <caption>Student Details</caption>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Rahul</td>
+                <td>21</td>
+                <td>Computer Science</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Priya</td>
+                <td>22</td>
+                <td>Electronics</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Amit</td>
+                <td>20</td>
+                <td>Mechanical</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">Total Students: 3</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
