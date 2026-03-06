@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>My HTML Journey — Mid Project</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>My HTML Journey</h1>
+    <p><b>Mid HTML Project</b> &mdash; Using Only HTML Tags &amp; Attributes</p>
+    <hr />
+  </header>
+
+  <!-- ==========================================
+       1. INTRODUCTION OF HTML
+  =========================================== -->
+  <section id="intro">
+    <h2>1. Introduction of HTML</h2>
+
+    <p>
+      <b>HTML</b> stands for <b>HyperText Markup Language</b>.<br />
+      It is the <em>skeleton</em> of every webpage &mdash; it tells the browser
+      what content to show and how to structure it.
+    </p>
+
+    <p><b>Basic HTML Document Structure:</b></p>
+
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <p><b>Output:</b></p>
+    <blockquote>
+      <h1>Hello World!</h1>
+    </blockquote>
+
+    <hr />
+  </section>
+
+
+  <!-- ==========================================
+       2. TAGS & ATTRIBUTES
+  =========================================== -->
+  <section id="tags">
+    <h2>2. Tags &amp; Attributes</h2>
+
+    <p>
+      <b>Tags</b> are the building blocks of HTML.<br />
+      <b>Attributes</b> add extra information inside the opening tag.
+    </p>
+
+    <p><b>Syntax:</b></p>
+    <pre>&lt;tagname attribute="value"&gt; Content &lt;/tagname&gt;</pre>
+
+    <p><b>Common Attributes Table:</b></p>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Used On</th>
+          <th>Purpose</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>id</code></td>
+          <td>Any element</td>
+          <td>Unique identifier</td>
+          <td><code>&lt;p id="intro"&gt;</code></td>
+        </tr>
+        <tr>
+          <td><code>class</code></td>
+          <td>Any element</td>
+          <td>Group elements</td>
+          <td><code>&lt;div class="box"&gt;</code></td>
+        </tr>
+        <tr>
+          <td><code>href</code></td>
+          <td>&lt;a&gt;</td>
+          <td>Link URL</td>
+          <td><code>&lt;a href="https://..."&gt;</code></td>
+        </tr>
+        <tr>
+          <td><code>src</code></td>
+          <td>&lt;img&gt;</td>
+          <td>Image file path</td>
+          <td><code>&lt;img src="photo.jpg"&gt;</code></td>
+        </tr>
+        <tr>
+          <td><code>alt</code></td>
+          <td>&lt;img&gt;</td>
+          <td>Fallback description</td>
+          <td><code>&lt;img alt="A cat"&gt;</code></td>
+        </tr>
+        <tr>
+          <td><code>width</code> / <code>height</code></td>
+          <td>&lt;img&gt;, &lt;table&gt;</td>
+          <td>Set size</td>
+          <td><code>&lt;img width="200"&gt;</code></td>
+        </tr>
+        <tr>
+          <td><code>target</code></td>
+          <td>&lt;a&gt;</td>
+          <td>Where to open link</td>
+          <td><code>&lt;a target="_blank"&gt;</code></td>
+        </tr>
+        <tr>
+          <td><code>title</code></td>
+          <td>Any element</td>
+          <td>Tooltip on hover</td>
+          <td><code>&lt;p title="tip"&gt;</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <p><b>Example &mdash; Anchor tag with multiple attributes:</b></p>
+    <pre>&lt;a href="https://example.com" target="_blank" title="Go to Example"&gt;Visit Example&lt;/a&gt;</pre>
+    <p><b>Output:</b> <a href="https://example.com" target="_blank" title="Go to Example">Visit Example</a></p>
+
+    <hr />
+  </section>
+
+
+  <!-- ==========================================
+       3. BASIC FORMATTING
+  =========================================== -->
+  <section id="formatting">
+    <h2>3. Basic Formatting</h2>
+
+    <p>HTML has built-in tags to format text without any CSS.</p>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Purpose</th>
+          <th>Output</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>&lt;b&gt;</code> / <code>&lt;strong&gt;</code></td>
+          <td>Bold text</td>
+          <td><b>Bold text</b> / <strong>Strong text</strong></td>
+        </tr>
+        <tr>
+          <td><code>&lt;i&gt;</code> / <code>&lt;em&gt;</code></td>
+          <td>Italic text</td>
+          <td><i>Italic text</i> / <em>Emphasized text</em></td>
+        </tr>
+        <tr>
+          <td><code>&lt;u&gt;</code></td>
+          <td>Underline</td>
+          <td><u>Underlined text</u></td>
+        </tr>
+        <tr>
+          <td><code>&lt;s&gt;</code> / <code>&lt;del&gt;</code></td>
+          <td>Strikethrough</td>
+          <td><s>Strikethrough</s> / <del>Deleted text</del></td>
+        </tr>
+        <tr>
+          <td><code>&lt;mark&gt;</code></td>
+          <td>Highlight</td>
+          <td><mark>Highlighted text</mark></td>
+        </tr>
+        <tr>
+          <td><code>&lt;small&gt;</code></td>
+          <td>Smaller text</td>
+          <td>Normal <small>small text</small></td>
+        </tr>
+        <tr>
+          <td><code>&lt;sub&gt;</code></td>
+          <td>Subscript</td>
+          <td>H<sub>2</sub>O</td>
+        </tr>
+        <tr>
+          <td><code>&lt;sup&gt;</code></td>
+          <td>Superscript</td>
+          <td>E=mc<sup>2</sup></td>
+        </tr>
+        <tr>
+          <td><code>&lt;code&gt;</code></td>
+          <td>Inline code</td>
+          <td><code>console.log("hi")</code></td>
+        </tr>
+        <tr>
+          <td><code>&lt;pre&gt;</code></td>
+          <td>Preformatted block</td>
+          <td><pre>  keeps
+  spacing</pre></td>
+        </tr>
+        <tr>
+          <td><code>&lt;blockquote&gt;</code></td>
+          <td>Indented quote</td>
+          <td><blockquote>"Learn HTML first!"</blockquote></td>
+        </tr>
+        <tr>
+          <td><code>&lt;br&gt;</code></td>
+          <td>Line break</td>
+          <td>Line one<br />Line two</td>
+        </tr>
+        <tr>
+          <td><code>&lt;hr&gt;</code></td>
+          <td>Horizontal line</td>
+          <td><hr /></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <p><b>Headings h1 &rarr; h6:</b></p>
+    <h1>h1 &mdash; Biggest Heading</h1>
+    <h2>h2 &mdash; Section Heading</h2>
+    <h3>h3 &mdash; Sub Section</h3>
+    <h4>h4 &mdash; Topic</h4>
+    <h5>h5 &mdash; Detail</h5>
+    <h6>h6 &mdash; Smallest Heading</h6>
+
+    <hr />
+  </section>
+
+
+  <!-- ==========================================
+       4. BLOCK vs INLINE
+  =========================================== -->
+  <section id="block-inline">
+    <h2>4. Block vs. Inline Elements</h2>
+
+    <p>
+      <b>Block elements</b> take up the <em>full width</em> and always start on a new line.<br />
+      <b>Inline elements</b> only take as much space as they need and stay in the flow of text.
+    </p>
+
+    <h3>Block Elements &mdash; each on its own row:</h3>
+
+    <div>&lt;div&gt; &mdash; generic block container</div>
+    <p>&lt;p&gt; &mdash; paragraph block</p>
+    <h4>&lt;h4&gt; &mdash; heading block</h4>
+
+    <p><b>Common block tags:</b></p>
+    <table border="1" cellpadding="6" cellspacing="0">
+      <tr><th>Tag</th><th>Description</th></tr>
+      <tr><td><code>&lt;div&gt;</code></td><td>Generic block container</td></tr>
+      <tr><td><code>&lt;p&gt;</code></td><td>Paragraph</td></tr>
+      <tr><td><code>&lt;h1&gt; – &lt;h6&gt;</code></td><td>Headings</td></tr>
+      <tr><td><code>&lt;ul&gt; &lt;ol&gt;</code></td><td>Lists</td></tr>
+      <tr><td><code>&lt;table&gt;</code></td><td>Table</td></tr>
+      <tr><td><code>&lt;section&gt;</code></td><td>Semantic section</td></tr>
+      <tr><td><code>&lt;header&gt;</code></td><td>Page/section header</td></tr>
+      <tr><td><code>&lt;footer&gt;</code></td><td>Page/section footer</td></tr>
+    </table>
+
+    <br />
+    <h3>Inline Elements &mdash; sit inside text:</h3>
+
+    <p>
+      This sentence has
+      <b>bold</b>,
+      <i>italic</i>,
+      <u>underline</u>,
+      <mark>highlight</mark>,
+      <code>code</code>,
+      <a href="#">a link</a>,
+      and <span>a span</span>
+      &mdash; all inline, no line breaks.
+    </p>
+
+    <p><b>Common inline tags:</b></p>
+    <table border="1" cellpadding="6" cellspacing="0">
+      <tr><th>Tag</th><th>Description</th></tr>
+      <tr><td><code>&lt;span&gt;</code></td><td>Generic inline container</td></tr>
+      <tr><td><code>&lt;a&gt;</code></td><td>Hyperlink</td></tr>
+      <tr><td><code>&lt;img&gt;</code></td><td>Image</td></tr>
+      <tr><td><code>&lt;b&gt; &lt;strong&gt;</code></td><td>Bold</td></tr>
+      <tr><td><code>&lt;i&gt; &lt;em&gt;</code></td><td>Italic</td></tr>
+      <tr><td><code>&lt;code&gt;</code></td><td>Inline code</td></tr>
+      <tr><td><code>&lt;br&gt;</code></td><td>Line break</td></tr>
+    </table>
+
+    <hr />
+  </section>
+
+
+  <!-- ==========================================
+       5. SEMANTIC TAGS
+  =========================================== -->
+  <section id="semantic">
+    <h2>5. Semantic Tags</h2>
+
+    <p>
+      Semantic tags tell the browser <em>what the content means</em>, not just how it looks.<br />
+      They help with <b>accessibility</b>, <b>SEO</b>, and code readability.
+    </p>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>&lt;header&gt;</code></td><td>Top of page or section — logo, title, nav</td></tr>
+        <tr><td><code>&lt;nav&gt;</code></td><td>Navigation links</td></tr>
+        <tr><td><code>&lt;main&gt;</code></td><td>Main unique content of the page</td></tr>
+        <tr><td><code>&lt;section&gt;</code></td><td>A thematic group of content</td></tr>
+        <tr><td><code>&lt;article&gt;</code></td><td>Self-contained content (blog post, card)</td></tr>
+        <tr><td><code>&lt;aside&gt;</code></td><td>Side content, tips, related info</td></tr>
+        <tr><td><code>&lt;footer&gt;</code></td><td>Bottom of page — copyright, links</td></tr>
+        <tr><td><code>&lt;figure&gt;</code></td><td>Image or diagram container</td></tr>
+        <tr><td><code>&lt;figcaption&gt;</code></td><td>Caption for a figure</td></tr>
+        <tr><td><code>&lt;time&gt;</code></td><td>Date or time value</td></tr>
+        <tr><td><code>&lt;address&gt;</code></td><td>Contact information</td></tr>
+        <tr><td><code>&lt;details&gt;</code></td><td>Expandable content block</td></tr>
+        <tr><td><code>&lt;summary&gt;</code></td><td>Visible title for &lt;details&gt;</td></tr>
+        <tr><td><code>&lt;mark&gt;</code></td><td>Highlighted / important text</td></tr>
+      </tbody>
+    </table>
+
+    <br />
+    <p><b>Example &mdash; Semantic Page Structure:</b></p>
+
+    <pre>
+&lt;header&gt;
+  &lt;h1&gt;My Website&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt; |
+    &lt;a href="#"&gt;About&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Post Title&lt;/h2&gt;
+    &lt;p&gt;Article content here...&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;aside&gt;
+    &lt;p&gt;Related links...&lt;/p&gt;
+  &lt;/aside&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;&amp;copy; 2026 My Website&lt;/p&gt;
+&lt;/footer&gt;
+    </pre>
+
+    <p><b>&lt;details&gt; &amp; &lt;summary&gt; live demo:</b></p>
+    <details>
+      <summary>Click to expand &mdash; What is HTML?</summary>
+      <p>HTML is HyperText Markup Language. It structures the content of web pages using tags and attributes.</p>
+    </details>
+
+    <hr />
+  </section>
+
+
+  <!-- ==========================================
+       6. LISTS
+  =========================================== -->
+  <section id="lists">
+    <h2>6. Lists</h2>
+
+    <p>HTML has <b>3 types</b> of lists:</p>
+
+    <h3>A) Unordered List &lt;ul&gt; &mdash; bullet points</h3>
+    <pre>
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+    <p><b>Output:</b></p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <h3>B) Ordered List &lt;ol&gt; &mdash; numbered</h3>
+    <pre>
+&lt;ol&gt;
+  &lt;li&gt;Learn HTML&lt;/li&gt;
+  &lt;li&gt;Learn CSS&lt;/li&gt;
+  &lt;li&gt;Build a project&lt;/li&gt;
+&lt;/ol&gt;
+    </pre>
+    <p><b>Output:</b></p>
+    <ol>
+      <li>Learn HTML</li>
+      <li>Learn CSS</li>
+      <li>Build a project</li>
+    </ol>
+
+    <h3>C) Definition List &lt;dl&gt; &mdash; term + description</h3>
+    <pre>
+&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;Structure of the page&lt;/dd&gt;
+  &lt;dt&gt;CSS&lt;/dt&gt;
+  &lt;dd&gt;Style of the page&lt;/dd&gt;
+  &lt;dt&gt;JavaScript&lt;/dt&gt;
+  &lt;dd&gt;Behaviour of the page&lt;/dd&gt;
+&lt;/dl&gt;
+    </pre>
+    <p><b>Output:</b></p>
+    <dl>
+      <dt><b>HTML</b></dt>
+      <dd>Structure of the page</dd>
+      <dt><b>CSS</b></dt>
+      <dd>Style of the page</dd>
+      <dt><b>JavaScript</b></dt>
+      <dd>Behaviour of the page</dd>
+    </dl>
+
+    <h3>D) Nested List</h3>
+    <ul>
+      <li>Frontend
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </li>
+      <li>Backend
+        <ul>
+          <li>Node.js</li>
+          <li>Python</li>
+        </ul>
+      </li>
+    </ul>
+
+    <hr />
+  </section>
+
+
+  <!-- ==========================================
+       7. IMAGES
+  =========================================== -->
+  <section id="images">
+    <h2>7. Images</h2>
+
+    <p>
+      The <code>&lt;img&gt;</code> tag is used to display images.<br />
+      It is a <b>self-closing</b> (void) tag &mdash; it has no closing tag.<br />
+      It is an <b>inline</b> element.
+    </p>
+
+    <h3>Important Attributes for &lt;img&gt;:</h3>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr><th>Attribute</th><th>Required?</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>src</code></td><td>Yes</td><td>Path or URL of the image</td></tr>
+        <tr><td><code>alt</code></td><td>Yes</td><td>Text shown if image fails to load; used by screen readers</td></tr>
+        <tr><td><code>width</code></td><td>No</td><td>Width in pixels</td></tr>
+        <tr><td><code>height</code></td><td>No</td><td>Height in pixels</td></tr>
+        <tr><td><code>title</code></td><td>No</td><td>Tooltip text on hover</td></tr>
+      </tbody>
+    </table>
+
+    <br />
+    <h3>Basic Image:</h3>
+    <pre>&lt;img src="photo.jpg" alt="A beautiful mountain" width="300" /&gt;</pre>
+
+    <h3>Image from the Web:</h3>
+    <pre>&lt;img src="https://via.placeholder.com/300x150" alt="Placeholder" width="300" /&gt;</pre>
+    <img src="https://via.placeholder.com/300x150" alt="Placeholder image showing 300 by 150" width="300" />
+
+    <h3>Image with &lt;figure&gt; and &lt;figcaption&gt;:</h3>
+    <pre>
+&lt;figure&gt;
+  &lt;img src="sunset.jpg" alt="Golden sunset over hills" width="300" /&gt;
+  &lt;figcaption&gt;A golden sunset over the hills&lt;/figcaption&gt;
+&lt;/figure&gt;
+    </pre>
+    <figure>
+      <img src="https://via.placeholder.com/300x180/f7934f/ffffff?text=Sunset+Photo" alt="Golden sunset over hills" width="300" />
+      <figcaption>A golden sunset over the hills</figcaption>
+    </figure>
+
+    <h3>Image as a Link:</h3>
+    <pre>
+&lt;a href="https://example.com"&gt;
+  &lt;img src="logo.png" alt="Example logo" width="100" /&gt;
+&lt;/a&gt;
+    </pre>
+    <a href="https://example.com" target="_blank">
+      <img src="https://via.placeholder.com/100x50/4f8ef7/ffffff?text=Click+Me" alt="Clickable image link" width="100" />
+    </a>
+
+    <hr />
+  </section>
+
+
+  <!-- ==========================================
+       8. MID PROJECT — STUDENT PROFILE PAGE
+  =========================================== -->
+  <section id="project">
+    <h2>8. Mid HTML Project &mdash; Student Profile Page</h2>
+    <p>
+      This profile page uses <em>every</em> HTML concept learned above:<br />
+      semantic tags, formatting, lists, images, attributes, block &amp; inline elements.
+    </p>
+
+    <hr />
+
+    <!-- ── THE ACTUAL MINI PROJECT ── -->
+
+    <article>
+
+      <header>
+        <img
+          src="https://via.placeholder.com/90x90/4f8ef7/ffffff?text=AJ"
+          alt="Profile photo of Alex Johnson"
+          width="90"
+          height="90"
+        />
+        <h1>Alex Johnson</h1>
+        <p>
+          <b>Front-End Developer</b> &amp; <em>HTML Learner</em>
+        </p>
+        <p>
+          <a href="mailto:alex@example.com">&#128231; alex@example.com</a>
+          &nbsp;|&nbsp;
+          <a href="https://portfolio.dev" target="_blank">&#127760; portfolio.dev</a>
+          &nbsp;|&nbsp;
+          <a href="https://github.com" target="_blank">&#128202; GitHub</a>
+        </p>
+        <address>
+          Kolkata, West Bengal, India
+        </address>
+      </header>
+
+      <hr />
+
+      <!-- About -->
+      <section>
+        <h2>About Me</h2>
+        <blockquote>
+          "I'm learning HTML to build beautiful websites from scratch.
+           Every tag I learn brings me one step closer to my goal."
+        </blockquote>
+        <p>
+          I am a passionate learner who started my web development journey
+          with <mark>HTML</mark>. I enjoy understanding how the web works from the
+          ground up. My goal is to become a <strong>full-stack developer</strong>.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- Skills — unordered list -->
+      <section>
+        <h2>Skills Learned</h2>
+        <ul>
+          <li>HTML Structure &amp; Document Setup</li>
+          <li>Tags &amp; Attributes</li>
+          <li>Text Formatting (<b>bold</b>, <i>italic</i>, <u>underline</u>, <mark>highlight</mark>)</li>
+          <li>Block vs. Inline Elements</li>
+          <li>Semantic HTML Tags</li>
+          <li>Lists &mdash; ul, ol, dl</li>
+          <li>Images &mdash; img, figure, figcaption</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <!-- Roadmap — ordered list with formatting -->
+      <section>
+        <h2>My Learning Roadmap</h2>
+        <ol>
+          <li><s>Introduction of HTML</s> &nbsp; <b>[&#10003; Done]</b></li>
+          <li><s>Tags &amp; Attributes</s> &nbsp; <b>[&#10003; Done]</b></li>
+          <li><s>Basic Formatting</s> &nbsp; <b>[&#10003; Done]</b></li>
+          <li><s>Block vs. Inline Elements</s> &nbsp; <b>[&#10003; Done]</b></li>
+          <li><s>Semantic Tags</s> &nbsp; <b>[&#10003; Done]</b></li>
+          <li><s>Lists &amp; Images</s> &nbsp; <b>[&#10003; Done]</b></li>
+          <li><mark><b>Mid HTML Project</b></mark> &nbsp; <b>[&#9654; In Progress]</b></li>
+          <li>CSS &amp; Styling &nbsp; <small>(upcoming)</small></li>
+          <li>JavaScript Basics &nbsp; <small>(upcoming)</small></li>
+          <li>Build a Full Website &nbsp; <small>(upcoming)</small></li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <!-- Favourite Topics — definition list -->
+      <section>
+        <h2>Topic Dictionary</h2>
+        <dl>
+          <dt><b>HTML</b></dt>
+          <dd>HyperText Markup Language &mdash; the structure of web pages.</dd>
+
+          <dt><b>Tag</b></dt>
+          <dd>An HTML element written inside angle brackets, e.g. <code>&lt;p&gt;</code>.</dd>
+
+          <dt><b>Attribute</b></dt>
+          <dd>Extra information added inside a tag, e.g. <code>href</code>, <code>src</code>, <code>alt</code>.</dd>
+
+          <dt><b>Semantic Tag</b></dt>
+          <dd>A tag that describes meaning, e.g. <code>&lt;article&gt;</code>, <code>&lt;nav&gt;</code>.</dd>
+
+          <dt><b>Block Element</b></dt>
+          <dd>Takes full width, starts on a new line. Example: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>.</dd>
+
+          <dt><b>Inline Element</b></dt>
+          <dd>Flows with text. Example: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code>.</dd>
+        </dl>
+      </section>
+
+      <hr />
+
+      <!-- Stats table -->
+      <section>
+        <h2>My Stats</h2>
+        <table border="1" cellpadding="8" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Topic</th>
+              <th>Status</th>
+              <th>Tags Learned</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Introduction of HTML</td><td>&#10003; Complete</td><td>html, head, body, meta, title</td></tr>
+            <tr><td>Tags &amp; Attributes</td><td>&#10003; Complete</td><td>id, class, href, src, alt, title</td></tr>
+            <tr><td>Basic Formatting</td><td>&#10003; Complete</td><td>b, i, u, mark, s, sub, sup, br, hr</td></tr>
+            <tr><td>Block vs Inline</td><td>&#10003; Complete</td><td>div, span, p</td></tr>
+            <tr><td>Semantic Tags</td><td>&#10003; Complete</td><td>header, nav, main, article, aside, footer</td></tr>
+            <tr><td>Lists</td><td>&#10003; Complete</td><td>ul, ol, dl, li, dt, dd</td></tr>
+            <tr><td>Images</td><td>&#10003; Complete</td><td>img, figure, figcaption</td></tr>
+            <tr><td>Mid HTML Project</td><td>&#9654; In Progress</td><td>All of the above!</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr />
+
+      <!-- Expandable fun facts -->
+      <section>
+        <h2>Fun Facts</h2>
+        <details>
+          <summary>Did you know? &mdash; HTML was created in 1991</summary>
+          <p>HTML was invented by <b>Tim Berners-Lee</b> in 1991. The first website ever made is still live at <a href="http://info.cern.ch" target="_blank">info.cern.ch</a>!</p>
+        </details>
+        <details>
+          <summary>Why is &lt;alt&gt; important?</summary>
+          <p>The <code>alt</code> attribute helps <b>visually impaired users</b> understand images through screen readers. It also shows text when an image fails to load. Always write a meaningful alt!</p>
+        </details>
+        <details>
+          <summary>Block vs Inline &mdash; quick trick to remember</summary>
+          <p><b>Block</b> = like a <em>paragraph</em> (takes the whole line).<br /><b>Inline</b> = like a <em>word</em> inside a sentence (shares the line).</p>
+        </details>
+      </section>
+
+    </article>
+
+    <hr />
+  </section>
+
+
+  <!-- ==========================================
+       FOOTER
+  =========================================== -->
+  <footer>
+    <p align="center">
+      Built with <b>&lt;html&gt;</b> only &mdash; No CSS, No JavaScript &nbsp;|&nbsp;
+      <em>My HTML Journey &copy; 2026</em>
+    </p>
+  </footer>
+
+</body>
+</html>
